@@ -26,7 +26,7 @@ setInterval(() => {
 
     const value = Number(response.BRL) * Number(configuration.balance);
 
-    createFiles.write(`${value.toFixed(2)} / ${response.BRL.toFixed(2)} ${configuration.currency} - ${new Date()} \r\n`);
+    createFiles.write(`${value.toFixed(2)} / ${response.BRL.toFixed(4)} ${configuration.currency} - ${new Date()} \r\n`);
 
   }).catch((err) => {
 
