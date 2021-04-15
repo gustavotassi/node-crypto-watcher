@@ -57,7 +57,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Installation
 
-1. Get a free API Key at [https://min-api.cryptocompare.com/pricing](Crypto Compare)
+1. Get a free API Key at [Crypto Compare](https://min-api.cryptocompare.com/pricing)
 2. Clone the repo
    ```sh
    git clone https://github.com/gustavotassi/node-crypto-watcher.git
