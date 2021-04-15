@@ -24,10 +24,10 @@ const createFiles = fs.createWriteStream('./results/values.txt', {
 setInterval(() => {
   rp(requestOptions).then(response => {
 
-    const value = Number(response.BRL) * Number(configuration.balance); 
+    const value = Number(response.BRL) * Number(configuration.balance);
 
-    createFiles.write(value.toFixed(2) + ' - ' + new Date() +'\r\n');
-  
+    createFiles.write(`${value.toFixed(2)} / ${response.BRL.toFixed(2)} ${configuration.currency} - ${new Date()} \r\n`);
+
   }).catch((err) => {
 
     console.log(`[${chalk.black.bgRed('ERROR')}] ${new Date()} : ${chalk.red(err.error)}`);
